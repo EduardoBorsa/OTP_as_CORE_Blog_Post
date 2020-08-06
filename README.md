@@ -1,5 +1,10 @@
 # BookStore
 
+## What is this about?
+
+  This is my implementation/follow through the series from:
+  https://akoutmos.com/post/actor-model-genserver-app/
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
