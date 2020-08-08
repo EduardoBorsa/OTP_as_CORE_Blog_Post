@@ -1,5 +1,8 @@
 # BookStore
 
+[![Build Status](https://travis-ci.org/EduardoBorsa/OTP_as_CORE_Blog_Post.svg?branch=master)](https://travis-ci.org/EduardoBorsa/OTP_as_CORE_Blog_Post)
+[![codecov](https://codecov.io/gh/EduardoBorsa/OTP_as_CORE_Blog_Post/branch/master/graph/badge.svg)](https://codecov.io/gh/EduardoBorsa/OTP_as_CORE_Blog_Post)
+
 ## What is this about?
 
   This is my implementation/follow through the series from:
