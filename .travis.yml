@@ -12,6 +12,7 @@ services:
 
 
 script:
+  - mix compile --warinings-as-errors
   - mix format --check-formatted --dry-run
   - mix credo --strict
   - mix sobelow --config
