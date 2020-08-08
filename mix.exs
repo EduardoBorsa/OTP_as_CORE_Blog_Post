@@ -10,6 +10,14 @@ defmodule BookStore.MixProject do
       compilers: [:phoenix] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.json": :test,
+        "coveralls.html": :test
+      ],
       deps: deps()
     ]
   end
@@ -43,7 +51,10 @@ defmodule BookStore.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:floki, "~> 0.26.0"},
-      {:httpoison, "~> 1.6"}
+      {:httpoison, "~> 1.6"},
+      {:sobelow, "~> 0.8", only: :dev},
+      {:excoveralls, "~> 0.13", only: :test},
+      {:credo, "~> 1.4", only: [:dev, :test], runtime: false}
     ]
   end
 
