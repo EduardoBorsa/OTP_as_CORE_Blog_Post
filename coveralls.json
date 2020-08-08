@@ -2,7 +2,7 @@
   "skip_files": [
   ],
   "coverage_options": {
-    "minimum_coverage": 75,
+    "minimum_coverage": 95,
     "output_dir": "cover/"
   },
   "terminal_options": {

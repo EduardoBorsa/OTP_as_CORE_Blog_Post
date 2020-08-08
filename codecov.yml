@@ -1,23 +1,23 @@
-
 codecov:
-    token: b7b5f1bb-743e-463c-8b61-5cf97efc92fd
-  coverage:
-    range: 90..100
-    round: down
-    precision: 2
-    status:
-      project:
-        default: true # disable the default status that measures entire project
-        all:
-          flags: all
-          target: 95%
-        tests: # declare a new status context "tests"
-          target: 95% # we always want 100% coverage here
-          flags: tests # only include coverage in "tests/" folder
-    flags:
+  token: b7b5f1bb-743e-463c-8b61-5cf97efc92fd
+
+coverage:
+  range: "90..100"
+  round: down
+  precision: 2
+  status:
+    project:
+      default: true # disable the default status that measures entire project
       all:
-        paths:
-          - "/tmp/cicdphoenix-test-results/exunit/"
-      tests:
-        paths:
-          - "/tmp/cicdphoenix-test-results/exunit/"
+        flags: all
+        target: 95%
+      tests: # declare a new status context "tests"
+        target: 95% # we always want 100% coverage here
+        flags: tests # only include coverage in "tests/" folder
+  flags:
+    all:
+      paths:
+        - "/tmp/cicdphoenix-test-results/exunit/"
+    tests:
+      paths:
+        - "/tmp/cicdphoenix-test-results/exunit/"
